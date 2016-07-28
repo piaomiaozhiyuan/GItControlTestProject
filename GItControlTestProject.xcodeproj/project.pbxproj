@@ -16,6 +16,11 @@
 		B4B962921D49D23800A04093 /* GItControlTestProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4B962911D49D23800A04093 /* GItControlTestProjectTests.m */; };
 		B4B9629D1D49D23800A04093 /* GItControlTestProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4B9629C1D49D23800A04093 /* GItControlTestProjectUITests.m */; };
 		B4B962AE1D49D35200A04093 /* CalculationMoney.m in Sources */ = {isa = PBXBuildFile; fileRef = B4B962AD1D49D35200A04093 /* CalculationMoney.m */; };
+		B4B962B91D49EB2600A04093 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B4B962B81D49EB2600A04093 /* BaseModel.m */; };
+		B4B962BC1D49EB3800A04093 /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B4B962BB1D49EB3800A04093 /* BaseViewModel.m */; };
+		B4B962BF1D49EB5800A04093 /* BaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B4B962BE1D49EB5800A04093 /* BaseVC.m */; };
+		B4B962C21D49EB7C00A04093 /* MoneyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B4B962C11D49EB7C00A04093 /* MoneyModel.m */; };
+		B4B962C51D4A092600A04093 /* MoneyViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B4B962C41D4A092600A04093 /* MoneyViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +45,8 @@
 		B4B962781D49D23700A04093 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B4B9627A1D49D23700A04093 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B4B9627B1D49D23700A04093 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B4B9627D1D49D23700A04093 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B4B9627E1D49D23700A04093 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B4B9627D1D49D23700A04093 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../ViewController.h; sourceTree = "<group>"; };
+		B4B9627E1D49D23700A04093 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../ViewController.m; sourceTree = "<group>"; };
 		B4B962811D49D23700A04093 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B4B962831D49D23700A04093 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4B962861D49D23700A04093 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,6 +61,16 @@
 		B4B962AD1D49D35200A04093 /* CalculationMoney.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculationMoney.m; sourceTree = "<group>"; };
 		B4B962B01D49DAB800A04093 /* GitTest-PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GitTest-PrefixHeader.pch"; sourceTree = "<group>"; };
 		B4B962B21D49DB4600A04093 /* Macro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macro.h; sourceTree = "<group>"; };
+		B4B962B71D49EB2600A04093 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		B4B962B81D49EB2600A04093 /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		B4B962BA1D49EB3800A04093 /* BaseViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewModel.h; sourceTree = "<group>"; };
+		B4B962BB1D49EB3800A04093 /* BaseViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewModel.m; sourceTree = "<group>"; };
+		B4B962BD1D49EB5800A04093 /* BaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseVC.h; sourceTree = "<group>"; };
+		B4B962BE1D49EB5800A04093 /* BaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseVC.m; sourceTree = "<group>"; };
+		B4B962C01D49EB7C00A04093 /* MoneyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoneyModel.h; sourceTree = "<group>"; };
+		B4B962C11D49EB7C00A04093 /* MoneyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoneyModel.m; sourceTree = "<group>"; };
+		B4B962C31D4A092600A04093 /* MoneyViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoneyViewModel.h; sourceTree = "<group>"; };
+		B4B962C41D4A092600A04093 /* MoneyViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoneyViewModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,14 +123,13 @@
 			children = (
 				B4B9627A1D49D23700A04093 /* AppDelegate.h */,
 				B4B9627B1D49D23700A04093 /* AppDelegate.m */,
-				B4B9627D1D49D23700A04093 /* ViewController.h */,
-				B4B9627E1D49D23700A04093 /* ViewController.m */,
+				B4B962B61D49E16C00A04093 /* model */,
+				B4B962B51D49E15900A04093 /* viewmodel */,
+				B4B962B41D49E13D00A04093 /* view */,
+				B4B962B31D49DE8600A04093 /* resource */,
 				B4B962B11D49DB2F00A04093 /* Macro */,
 				B4B962AF1D49D9CE00A04093 /* config */,
 				B4B962AA1D49D2A000A04093 /* Util */,
-				B4B962801D49D23700A04093 /* Main.storyboard */,
-				B4B962831D49D23700A04093 /* Assets.xcassets */,
-				B4B962851D49D23700A04093 /* LaunchScreen.storyboard */,
 				B4B962881D49D23700A04093 /* Info.plist */,
 				B4B962771D49D23700A04093 /* Supporting Files */,
 			);
@@ -179,6 +193,49 @@
 				B4B962B21D49DB4600A04093 /* Macro.h */,
 			);
 			name = Macro;
+			sourceTree = "<group>";
+		};
+		B4B962B31D49DE8600A04093 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				B4B962801D49D23700A04093 /* Main.storyboard */,
+				B4B962831D49D23700A04093 /* Assets.xcassets */,
+				B4B962851D49D23700A04093 /* LaunchScreen.storyboard */,
+			);
+			name = resource;
+			sourceTree = "<group>";
+		};
+		B4B962B41D49E13D00A04093 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				B4B962BD1D49EB5800A04093 /* BaseVC.h */,
+				B4B962BE1D49EB5800A04093 /* BaseVC.m */,
+				B4B9627D1D49D23700A04093 /* ViewController.h */,
+				B4B9627E1D49D23700A04093 /* ViewController.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		B4B962B51D49E15900A04093 /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				B4B962BA1D49EB3800A04093 /* BaseViewModel.h */,
+				B4B962BB1D49EB3800A04093 /* BaseViewModel.m */,
+				B4B962C31D4A092600A04093 /* MoneyViewModel.h */,
+				B4B962C41D4A092600A04093 /* MoneyViewModel.m */,
+			);
+			path = viewmodel;
+			sourceTree = "<group>";
+		};
+		B4B962B61D49E16C00A04093 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				B4B962B71D49EB2600A04093 /* BaseModel.h */,
+				B4B962B81D49EB2600A04093 /* BaseModel.m */,
+				B4B962C01D49EB7C00A04093 /* MoneyModel.h */,
+				B4B962C11D49EB7C00A04093 /* MoneyModel.m */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,9 +368,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4B962C21D49EB7C00A04093 /* MoneyModel.m in Sources */,
+				B4B962BF1D49EB5800A04093 /* BaseVC.m in Sources */,
 				B4B962AE1D49D35200A04093 /* CalculationMoney.m in Sources */,
+				B4B962BC1D49EB3800A04093 /* BaseViewModel.m in Sources */,
 				B4B9627F1D49D23700A04093 /* ViewController.m in Sources */,
 				B4B9627C1D49D23700A04093 /* AppDelegate.m in Sources */,
+				B4B962C51D4A092600A04093 /* MoneyViewModel.m in Sources */,
+				B4B962B91D49EB2600A04093 /* BaseModel.m in Sources */,
 				B4B962791D49D23700A04093 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
