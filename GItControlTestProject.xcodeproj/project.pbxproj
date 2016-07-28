@@ -15,6 +15,7 @@
 		B4B962871D49D23700A04093 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4B962851D49D23700A04093 /* LaunchScreen.storyboard */; };
 		B4B962921D49D23800A04093 /* GItControlTestProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4B962911D49D23800A04093 /* GItControlTestProjectTests.m */; };
 		B4B9629D1D49D23800A04093 /* GItControlTestProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4B9629C1D49D23800A04093 /* GItControlTestProjectUITests.m */; };
+		B4B962AE1D49D35200A04093 /* CalculationMoney.m in Sources */ = {isa = PBXBuildFile; fileRef = B4B962AD1D49D35200A04093 /* CalculationMoney.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		B4B962981D49D23800A04093 /* GItControlTestProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GItControlTestProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4B9629C1D49D23800A04093 /* GItControlTestProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GItControlTestProjectUITests.m; sourceTree = "<group>"; };
 		B4B9629E1D49D23800A04093 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4B962AC1D49D35200A04093 /* CalculationMoney.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculationMoney.h; sourceTree = "<group>"; };
+		B4B962AD1D49D35200A04093 /* CalculationMoney.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculationMoney.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,7 @@
 				B4B9627B1D49D23700A04093 /* AppDelegate.m */,
 				B4B9627D1D49D23700A04093 /* ViewController.h */,
 				B4B9627E1D49D23700A04093 /* ViewController.m */,
+				B4B962AA1D49D2A000A04093 /* Util */,
 				B4B962801D49D23700A04093 /* Main.storyboard */,
 				B4B962831D49D23700A04093 /* Assets.xcassets */,
 				B4B962851D49D23700A04093 /* LaunchScreen.storyboard */,
@@ -138,6 +142,23 @@
 				B4B9629E1D49D23800A04093 /* Info.plist */,
 			);
 			path = GItControlTestProjectUITests;
+			sourceTree = "<group>";
+		};
+		B4B962AA1D49D2A000A04093 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				B4B962AB1D49D33500A04093 /* CalculationMoney */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		B4B962AB1D49D33500A04093 /* CalculationMoney */ = {
+			isa = PBXGroup;
+			children = (
+				B4B962AC1D49D35200A04093 /* CalculationMoney.h */,
+				B4B962AD1D49D35200A04093 /* CalculationMoney.m */,
+			);
+			path = CalculationMoney;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4B962AE1D49D35200A04093 /* CalculationMoney.m in Sources */,
 				B4B9627F1D49D23700A04093 /* ViewController.m in Sources */,
 				B4B9627C1D49D23700A04093 /* AppDelegate.m in Sources */,
 				B4B962791D49D23700A04093 /* main.m in Sources */,
