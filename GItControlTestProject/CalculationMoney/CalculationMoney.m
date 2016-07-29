@@ -10,15 +10,8 @@
 
 @implementation CalculationMoney
 
-typedef NS_ENUM(NSInteger, Operator) {
-    //以下是枚举成员(用于管理运算类型)
-    OperatorAdd               = 0,       //加法
-    OperatorSubtracting       = 1,       //减法
-    OperatorMultiplying       = 2,       //乘法
-    OperatorDividing          = 3        //除法
-};
 /**
- 
+ 取舍方式 小数点位数
  */
 +(NSDecimalNumberHandler *)instanceDecimalNumberHandlerWithRoundingMode:(NSRoundingMode)roundingModel afterPoint:(short)position {
     NSDecimalNumberHandler *decimalNumberHandler = [NSDecimalNumberHandler
@@ -41,14 +34,14 @@ typedef NS_ENUM(NSInteger, Operator) {
  */
 +(NSString*)calculationMoneyWithLeftOperand:(NSString*)leftOperand
                                rightOperand:(NSString*)rightOperand
-                                   operator:(Operator)operator
+                                   operator:(Operator)operatorType
                                roundingMode:(NSRoundingMode)roundingModel
                                  afterPoint:(short)position {
     
     NSDecimalNumber *numberA = [NSDecimalNumber decimalNumberWithString:leftOperand];
     NSDecimalNumber *numberB = [NSDecimalNumber decimalNumberWithString:rightOperand];
     NSDecimalNumber *numberResult = [NSDecimalNumber zero];
-    switch (operator) {
+    switch (operatorType) {
         case OperatorAdd: {//加法
             numberResult = [numberA decimalNumberByAdding:numberB withBehavior:[self instanceDecimalNumberHandlerWithRoundingMode:roundingModel afterPoint:position]];
         }
@@ -183,5 +176,25 @@ typedef NS_ENUM(NSInteger, Operator) {
                                     roundingMode:roundingModel
                                       afterPoint:position];
 }
-
+/**
+ 四则运算操作
+ @param leftOperand rightOperand 两个字符串类型数字
+ @param roundingModel 取舍方式
+ @param position 小数点后几位
+ @param operatorType 运算类型
+ @returns 字符串类型数的商
+ @exception 注意strB不能为0
+ */
++(NSString*)calculationMoneyWithLeftOperand:(NSString*)leftOperand
+                               rightOperand:(NSString*)rightOperand
+                               roundingMode:(NSRoundingMode)roundingModel
+                                   operator:(Operator)operatorType
+                                 afterPoint:(short)position {
+    
+    return [self calculationMoneyWithLeftOperand:leftOperand
+                                    rightOperand:rightOperand
+                                        operator:operatorType
+                                    roundingMode:roundingModel
+                                      afterPoint:position];
+}
 @end

@@ -9,6 +9,8 @@
 #import "ViewController.h"
 
 #import "CalculationMoney.h"
+#import "Common.h"
+#import "NSString+ExchangeMoney.h"
 
 @interface ViewController ()
 
@@ -54,7 +56,30 @@
 }
 //等于
 - (IBAction)clickEqual:(UIButton *)sender {
-    
+    id data = [Common analysisLocationJsonWithName:@"PriceTestJson"];
+    if (data != NULL && [data isKindOfClass:[NSDictionary class]]) {
+        NSLog(@"%@",data);
+        NSString *strPrice1 = data[@"strPrice1"];
+        NSString *strPrice2 = data[@"strPrice2"];
+        NSString *doublePrice1 = [data[@"doublePrice1"] stringValue];
+        NSString *doublePrice2 = [data[@"doublePrice2"] stringValue];
+        NSString *doublePrice3 = [data[@"doublePrice3"] stringValue];
+        NSString *doublePrice4 = [data[@"doublePrice4"] stringValue];
+        KULog(@"%@--%@--%@--%@",doublePrice1,doublePrice2,doublePrice3,doublePrice4)
+        NSLog(@"%@",[data[@"doublePrice1"] class]);
+//        NSString *decimalPrice1 = [NSString decimalNumberWithDouble:data[@"doublePrice1"]];
+//        NSString *decimalPrice2 = [NSString decimalNumberWithDouble:data[@"doublePrice2"]];
+//        NSString *decimalPrice3 = [NSString decimalNumberWithDouble:data[@"doublePrice3"]];
+//        NSString *decimalPrice4 = [NSString decimalNumberWithDouble:data[@"doublePrice4"]];
+//
+        NSString *jsonStr = @"{\"71.40\":71.40, \"97.40\":97.40, \"80.40\":80.40, \"188.40\":188.40}";
+        NSLog(@"json:%@", jsonStr);
+        NSData *jsonData_ = [jsonStr dataUsingEncoding:NSUTF8StringEncoding];
+        NSError *jsonParsingError_ = nil;
+        NSDictionary *dic = [NSMutableDictionary dictionaryWithDictionary:[NSJSONSerialization JSONObjectWithData:jsonData_ options:0 error:&jsonParsingError_]];
+        NSLog(@"dic:%@", dic);
+        
+    }
 }
 -(void)testCaseOne {
     //90.7049+0.22 然后四舍五入
@@ -125,7 +150,7 @@
                                       
                                       decimalNumberHandlerWithRoundingMode:NSRoundUp
                                       
-                                      scale:-1
+                                      scale:2
                                       
                                       raiseOnExactness:NO
                                       

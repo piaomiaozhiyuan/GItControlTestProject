@@ -21,6 +21,10 @@
 		B4B962BF1D49EB5800A04093 /* BaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B4B962BE1D49EB5800A04093 /* BaseVC.m */; };
 		B4B962C21D49EB7C00A04093 /* MoneyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B4B962C11D49EB7C00A04093 /* MoneyModel.m */; };
 		B4B962C51D4A092600A04093 /* MoneyViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B4B962C41D4A092600A04093 /* MoneyViewModel.m */; };
+		B4D13A4D1D4B1CD00090D33B /* NSString+ExchangeMoney.m in Sources */ = {isa = PBXBuildFile; fileRef = B4D13A4C1D4B1CD00090D33B /* NSString+ExchangeMoney.m */; };
+		B4D13A511D4B21CD0090D33B /* PriceTestJson.json in Resources */ = {isa = PBXBuildFile; fileRef = B4D13A501D4B21CD0090D33B /* PriceTestJson.json */; };
+		B4D13A551D4B227E0090D33B /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = B4D13A541D4B227E0090D33B /* Common.m */; };
+		B4D13A581D4B248F0090D33B /* NSString+DocumentPath.m in Sources */ = {isa = PBXBuildFile; fileRef = B4D13A571D4B248F0090D33B /* NSString+DocumentPath.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +75,13 @@
 		B4B962C11D49EB7C00A04093 /* MoneyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoneyModel.m; sourceTree = "<group>"; };
 		B4B962C31D4A092600A04093 /* MoneyViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoneyViewModel.h; sourceTree = "<group>"; };
 		B4B962C41D4A092600A04093 /* MoneyViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoneyViewModel.m; sourceTree = "<group>"; };
+		B4D13A4B1D4B1CD00090D33B /* NSString+ExchangeMoney.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ExchangeMoney.h"; sourceTree = "<group>"; };
+		B4D13A4C1D4B1CD00090D33B /* NSString+ExchangeMoney.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ExchangeMoney.m"; sourceTree = "<group>"; };
+		B4D13A501D4B21CD0090D33B /* PriceTestJson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PriceTestJson.json; sourceTree = "<group>"; };
+		B4D13A531D4B227E0090D33B /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		B4D13A541D4B227E0090D33B /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
+		B4D13A561D4B248F0090D33B /* NSString+DocumentPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DocumentPath.h"; sourceTree = "<group>"; };
+		B4D13A571D4B248F0090D33B /* NSString+DocumentPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DocumentPath.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,7 +140,9 @@
 				B4B962B31D49DE8600A04093 /* resource */,
 				B4B962B11D49DB2F00A04093 /* Macro */,
 				B4B962AF1D49D9CE00A04093 /* config */,
+				B4D13A471D4B1AB80090D33B /* category */,
 				B4B962AA1D49D2A000A04093 /* Util */,
+				B4D13A521D4B22580090D33B /* common */,
 				B4B962881D49D23700A04093 /* Info.plist */,
 				B4B962771D49D23700A04093 /* Supporting Files */,
 			);
@@ -198,6 +211,8 @@
 		B4B962B31D49DE8600A04093 /* resource */ = {
 			isa = PBXGroup;
 			children = (
+				B4D13A4F1D4B21810090D33B /* image */,
+				B4D13A4E1D4B21710090D33B /* other */,
 				B4B962801D49D23700A04093 /* Main.storyboard */,
 				B4B962831D49D23700A04093 /* Assets.xcassets */,
 				B4B962851D49D23700A04093 /* LaunchScreen.storyboard */,
@@ -236,6 +251,41 @@
 				B4B962C11D49EB7C00A04093 /* MoneyModel.m */,
 			);
 			path = model;
+			sourceTree = "<group>";
+		};
+		B4D13A471D4B1AB80090D33B /* category */ = {
+			isa = PBXGroup;
+			children = (
+				B4D13A4B1D4B1CD00090D33B /* NSString+ExchangeMoney.h */,
+				B4D13A4C1D4B1CD00090D33B /* NSString+ExchangeMoney.m */,
+				B4D13A561D4B248F0090D33B /* NSString+DocumentPath.h */,
+				B4D13A571D4B248F0090D33B /* NSString+DocumentPath.m */,
+			);
+			path = category;
+			sourceTree = "<group>";
+		};
+		B4D13A4E1D4B21710090D33B /* other */ = {
+			isa = PBXGroup;
+			children = (
+				B4D13A501D4B21CD0090D33B /* PriceTestJson.json */,
+			);
+			name = other;
+			sourceTree = "<group>";
+		};
+		B4D13A4F1D4B21810090D33B /* image */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = image;
+			sourceTree = "<group>";
+		};
+		B4D13A521D4B22580090D33B /* common */ = {
+			isa = PBXGroup;
+			children = (
+				B4D13A531D4B227E0090D33B /* Common.h */,
+				B4D13A541D4B227E0090D33B /* Common.m */,
+			);
+			path = common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -343,6 +393,7 @@
 			files = (
 				B4B962871D49D23700A04093 /* LaunchScreen.storyboard in Resources */,
 				B4B962841D49D23700A04093 /* Assets.xcassets in Resources */,
+				B4D13A511D4B21CD0090D33B /* PriceTestJson.json in Resources */,
 				B4B962821D49D23700A04093 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -368,9 +419,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4D13A551D4B227E0090D33B /* Common.m in Sources */,
+				B4D13A581D4B248F0090D33B /* NSString+DocumentPath.m in Sources */,
 				B4B962C21D49EB7C00A04093 /* MoneyModel.m in Sources */,
 				B4B962BF1D49EB5800A04093 /* BaseVC.m in Sources */,
 				B4B962AE1D49D35200A04093 /* CalculationMoney.m in Sources */,
+				B4D13A4D1D4B1CD00090D33B /* NSString+ExchangeMoney.m in Sources */,
 				B4B962BC1D49EB3800A04093 /* BaseViewModel.m in Sources */,
 				B4B9627F1D49D23700A04093 /* ViewController.m in Sources */,
 				B4B9627C1D49D23700A04093 /* AppDelegate.m in Sources */,
@@ -606,6 +660,7 @@
 				B4B962A31D49D23800A04093 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B4B962A41D49D23800A04093 /* Build configuration list for PBXNativeTarget "GItControlTestProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -614,6 +669,7 @@
 				B4B962A61D49D23800A04093 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B4B962A71D49D23800A04093 /* Build configuration list for PBXNativeTarget "GItControlTestProjectUITests" */ = {
 			isa = XCConfigurationList;
@@ -622,6 +678,7 @@
 				B4B962A91D49D23800A04093 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
