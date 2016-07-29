@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "GItControlTestProject/ViewController.m"
-            timestampString = "491466080.509921"
+            timestampString = "491471695.114823"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "121"
-            endingLineNumber = "121"
+            startingLineNumber = "124"
+            endingLineNumber = "124"
             landmarkName = "-testCaseTwo"
             landmarkType = "5">
          </BreakpointContent>

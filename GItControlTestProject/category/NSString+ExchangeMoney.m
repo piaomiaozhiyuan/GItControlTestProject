@@ -17,9 +17,7 @@
     return [decNumber stringValue];
 }
 +(NSString *)decimalNumberWithNumber:(NSNumber*)conversionValue {
-    NSString *doubleString        = [NSString stringWithFormat:@"%@", conversionValue];
-    NSDecimalNumber *decNumber    = [NSDecimalNumber decimalNumberWithString:doubleString];
-    return [decNumber stringValue];
+    return [self decimalNumberWithDouble:[conversionValue doubleValue]];
 }
 
 @end

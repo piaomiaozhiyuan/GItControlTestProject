@@ -65,13 +65,16 @@
         NSString *doublePrice2 = [data[@"doublePrice2"] stringValue];
         NSString *doublePrice3 = [data[@"doublePrice3"] stringValue];
         NSString *doublePrice4 = [data[@"doublePrice4"] stringValue];
-        KULog(@"%@--%@--%@--%@",doublePrice1,doublePrice2,doublePrice3,doublePrice4)
-        NSLog(@"%@",[data[@"doublePrice1"] class]);
+        
+        
 //        NSString *decimalPrice1 = [NSString decimalNumberWithDouble:data[@"doublePrice1"]];
 //        NSString *decimalPrice2 = [NSString decimalNumberWithDouble:data[@"doublePrice2"]];
 //        NSString *decimalPrice3 = [NSString decimalNumberWithDouble:data[@"doublePrice3"]];
 //        NSString *decimalPrice4 = [NSString decimalNumberWithDouble:data[@"doublePrice4"]];
 //
+        NSString *strDecimal = [NSString decimalNumberWithNumber:data[@"doublePrice3"]];
+        KULog(@"%@--%@--%@--%@\n%@",doublePrice1,doublePrice2,doublePrice3,doublePrice4,strDecimal)
+        
         NSString *jsonStr = @"{\"71.40\":71.40, \"97.40\":97.40, \"80.40\":80.40, \"188.40\":188.40}";
         NSLog(@"json:%@", jsonStr);
         NSData *jsonData_ = [jsonStr dataUsingEncoding:NSUTF8StringEncoding];
