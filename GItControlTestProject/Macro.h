@@ -21,16 +21,6 @@
 
 //-------------------网络及其他常用宏-------------------------
 
-#define KUrlBase      @""
-/**微信注册的AppId*/
-#define KWXAppId      @"wxe8d026fcfc886675"
-/**支付宝schemes*/
-#define KSchemesAli   @"uSmile_alipay"
-/**银联schemes*/
-#define KSchemesUP    @"uSmile_unionPay"
-/**h5 schemes*/
-#define KSchemesH5    @""
-
 #define KDefaultSet(key,object) {NSUserDefaults *info = [NSUserDefaults standardUserDefaults];[info setObject:object forKey:key];[info synchronize];}
 #define KDefaultGet(key)        [[NSUserDefaults standardUserDefaults]valueForKey:key]
 #define KDefaultClear(key)      {NSUserDefaults *info = [NSUserDefaults standardUserDefaults];[info removeObjectForKey:key];[info synchronize];}
