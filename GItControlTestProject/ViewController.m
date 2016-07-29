@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 
+#import "CalculationMoney.h"
+
 @interface ViewController ()
 
 @property (weak, nonatomic) IBOutlet UITextField *txtNumberOne;/**<数一*/
@@ -44,7 +46,11 @@
 }
 //除
 - (IBAction)clickDivide:(UIButton *)sender {
-    
+    NSString *strDecimal = [CalculationMoney calculationMoneyDivWithLeftOperand:self.txtNumberOne.text
+                                            rightOperand:self.txtNumberTwo.text
+                                            roundingMode:NSRoundPlain
+                                              afterPoint:-1];
+    self.txtNumberValue.text = strDecimal;
 }
 //等于
 - (IBAction)clickEqual:(UIButton *)sender {
@@ -87,7 +93,7 @@
 }
 
 -(void)testCaseTwo {
-    NSDecimalNumber*price1 = [NSDecimalNumber decimalNumberWithString:@"15.99"];
+    NSDecimalNumber*price1 = [NSDecimalNumber decimalNumberWithString:@"15.94"];
     
     NSDecimalNumber*price2 = [NSDecimalNumber decimalNumberWithString:@"29.99"];
     
@@ -95,7 +101,7 @@
     
     NSDecimalNumber*discount = [NSDecimalNumber decimalNumberWithString:@".90"];
     
-    NSDecimalNumber*numProducts = [NSDecimalNumber decimalNumberWithString:@"2.0"];
+    NSDecimalNumber*numProducts = [NSDecimalNumber decimalNumberWithString:@"3.0"];
     
     
     
@@ -107,6 +113,9 @@
     
     NSDecimalNumber *average = [afterDiscount decimalNumberByDividingBy:numProducts];
     
+    NSDecimalNumber *decimal1 = [price1 decimalNumberByDividingBy:numProducts];
+    self.txtNumberValue.text = [decimal1 stringValue];
+    
     NSDecimalNumber*averageSquared = [average decimalNumberByRaisingToPower:2];
 }
 -(void)testCaseThree {
@@ -116,7 +125,7 @@
                                       
                                       decimalNumberHandlerWithRoundingMode:NSRoundUp
                                       
-                                      scale:2
+                                      scale:-1
                                       
                                       raiseOnExactness:NO
                                       
