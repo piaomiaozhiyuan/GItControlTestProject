@@ -55,7 +55,7 @@ typedef NS_ENUM(NSInteger, Operator) {
  @param roundingModel 取舍方式
  @param position 小数点后几位
  @returns 字符串类型数的商
- @exception 注意strB不能为0
+ @exception 注意rightOperand不能为0
  */
 +(NSString*)calculationMoneyDivWithLeftOperand:(NSString*)leftOperand
                                   rightOperand:(NSString*)rightOperand
@@ -68,7 +68,6 @@ typedef NS_ENUM(NSInteger, Operator) {
  @param position 小数点后几位
  @param operatorType 运算类型
  @returns 字符串类型数的商
- @exception 注意strB不能为0
  */
 +(NSString*)calculationMoneyWithLeftOperand:(NSString*)leftOperand
                                   rightOperand:(NSString*)rightOperand
